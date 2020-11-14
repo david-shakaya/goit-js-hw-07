@@ -37,7 +37,7 @@ function createDiv(amaunt) {
   
         
         divRef.append(box)
-        console.log(divRef);
+       
     }
     divFindRef = document.querySelector('.box')
 }
