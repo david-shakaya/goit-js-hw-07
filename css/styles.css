@@ -1,0 +1,27 @@
+/* Задача 3 */
+li {
+  list-style: none;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.img-list-item-js {
+  width: 200px;
+}
+
+/* Задача 6 */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
