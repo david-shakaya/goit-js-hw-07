@@ -7,9 +7,6 @@ const ingredients = [
   'Приправы',
 ];
 
-
-
-let i = 0
 let arrElem = [];
 const get = (arr) => arr.forEach(element => {
 

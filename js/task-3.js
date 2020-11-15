@@ -16,14 +16,34 @@ const images = [
   },
 ];
 
+// Решение через одну вставку
 
-
-const addImages = (arr) => arr.forEach( img =>{
-
+const addImages = (arr) => arr.reduce((acc, img) => 
+  acc +
+  `<li><img class = "img-list-item-js" 
+    src=" ${img.url}" alt= "${img.alt}" /> </li > `
+  , '')
+    
+    addImages(images)
 const gallery = document.querySelector('#gallery') 
 
-    gallery.insertAdjacentHTML('afterbegin', `<li><img class = "img-list-item-js" 
-    src=" ${img.url}" alt= "${img.alt}" /> </li > `)
+gallery.innerHTML = addImages(images);
+
+// >>>>>>>> innerHTML медод позволяющий распарсить строку в HTML код и добавить в DOM. 
+//  из такой строки сделать html код '<li>jopa</li>'
+
+
+
+
+
+
+
+// const addImages = (arr) => arr.forEach( img =>{
+
+// const gallery = document.querySelector('#gallery') 
+
+//     gallery.insertAdjacentHTML('afterbegin', `<li><img class = "img-list-item-js" 
+//     src=" ${img.url}" alt= "${img.alt}" /> </li > `)
     
-})
-addImages(images)
+// })
+// addImages(images)
